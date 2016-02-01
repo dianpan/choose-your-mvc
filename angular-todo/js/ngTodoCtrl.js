@@ -7,4 +7,15 @@ ngTodo.controller('NgTodoCtrl', function ($scope) {
     { val: "walk the dog", completed: false },
     { val: "read a book", completed: true },
   ];
+
+  $scope.addNewTask = function() {
+    $scope.todos.unshift({ completed: false, val: $scope.newTask });
+    $scope.newTask = '';
+  };
+
+  $scope.clearCompleted = function() {
+    $scope.todos = $scope.todos.filter(function(task) {
+        return !task.completed;
+    });
+  };
 });

@@ -24,7 +24,7 @@
         </span>
         <input ng-model="newTask" placeholder="New Todo" class="form-control" type="text"><!-- model  -->
         <span class="input-group-btn">
-          <button class="btn btn-success" type="button"><!-- click  -->
+          <button ng-click="addNewTask()" class="btn btn-success" type="button"><!-- click  -->
             <i class="glyphicon glyphicon-plus"></i>
           </button>
         </span>
@@ -43,7 +43,7 @@
       </div>
 
       <div class="btn-clear-group">
-        <button class="btn btn-primary btn-clear">Clear Completed</button><!-- click -->
+        <button ng-click="clearCompleted()" class="btn btn-primary btn-clear">Clear Completed</button><!-- click -->
       </div>
     </div>
   </section>
