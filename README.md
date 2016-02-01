@@ -1,2 +1,7 @@
 # choose-your-mvc
-Choosing a MVC amongst Angular, React, Ember and Backbone
+
+####Making a to-do app in each of the following frameworks:
+- Angular
+- React
+- Ember
+- Backbone
