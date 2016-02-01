@@ -36,7 +36,7 @@
         </span>
         <input ng-model="todo.val" ng-class="{ finished: todo.completed }" class="form-control" type="text"><!-- model / class  -->
         <span class="input-group-btn">
-          <button class="btn btn-danger" type="button"><!-- click  -->
+          <button ng-click="removeTodo($index)" class="btn btn-danger" type="button"><!-- click  -->
             <i class="glyphicon glyphicon-remove"></i>
           </button>
         </span>

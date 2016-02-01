@@ -18,4 +18,9 @@ ngTodo.controller('NgTodoCtrl', function ($scope) {
         return !task.completed;
     });
   };
+
+  $scope.removeTodo = function(index) {
+    $scope.todos.splice(index, 1);
+  };
+
 });
