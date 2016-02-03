@@ -1,4 +1,4 @@
-var ngTodo = angular.module('ngTodo', ['colorDirective'])
+var ngTodo = angular.module('ngTodo', ['colorDirective', 'capsFilter'])
 .config(function(){
 
 });
