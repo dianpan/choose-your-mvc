@@ -1,11 +1,10 @@
 ngTodo.controller('NgTodoCtrl', function ($scope) {
 //angular has dependecy injection, hence the $scope argument
   $scope.todos = [
-    { val: "bake a cake", completed: false },
+    { val: "learn Angular", completed: true },
     { val: "run a mile", completed: false },
     { val: "take a shower", completed: true },
     { val: "walk the dog", completed: false },
-    { val: "read a book", completed: true },
   ];
 
   $scope.addNewTask = function() {

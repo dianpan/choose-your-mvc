@@ -4,7 +4,7 @@ angular.module('colorDirective', [])
       restrict: 'A', //attribute
       link: function(scope, element, attrs) {
         scope.$watch(attrs.completeColor, function(value) {
-          element.css('color', (value ? 'yellow' : 'limegreen'));
+          element.css('color', (value ? 'green' : 'yellow'));
         });
       }
     }
