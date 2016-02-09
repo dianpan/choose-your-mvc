@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>emb-todo</title>
+  <title>ember-todo</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -10,46 +10,48 @@
 <body>
   <div class="navbar navbar-inverse" role="navigation">
     <div class="container">
-      <a class="navbar-brand" href="#">emb-todo</a>
+      <a class="navbar-brand" href="#">ember-todo</a>
       <a class="navbar-right navbar-img" href="#"><img src="img/ember.png" alt=""></a>
     </div>
   </div>
 
   <!-- script -->
-  <section>
-    <div class="outer-container">
+  <script type="text/x-handlebars" data-template-name="todos">
+    <section>
+      <div class="outer-container">
 
-      <div class="add-todo-group input-group input-group-lg">
-        <span class="input-group-addon">
-          <i class="glyphicon glyphicon-list-alt"></i>
-        </span>
-        <input class="form-control" type="text" id="new-todo" placeholder="New Todo"> <!-- input value action -->
-        <span class="input-group-btn">
-          <button class="btn btn-success" type="button"> <!-- action createNewTodo -->
-            <i class="glyphicon glyphicon-plus"></i>
-          </button>
-        </span>
-      </div>
-      <!-- each -->
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
+        <div class="add-todo-group input-group input-group-lg">
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-list-alt"></i>
+          </span>
+          <input class="form-control" type="text" id="new-todo" placeholder="New Todo"> <!-- input value action -->
+          <span class="input-group-btn">
+            <button class="btn btn-success" type="button"> <!-- action createNewTodo -->
+              <i class="glyphicon glyphicon-plus"></i>
+            </button>
+          </span>
+        </div>
+        <!-- each -->
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon">
+            <input type="checkbox">
+          </span>
 
-        <input class="form-control"> <!-- value classNameBindings -->
-        <span class="input-group-btn">
-          <button class="btn btn-danger" type="button"> <!-- action -->
-            <i class="glyphicon glyphicon-remove"></i>
-          </button>
-        </span>
-      </div>
-      <!-- /each -->
+          <input class="form-control"> <!-- value classNameBindings -->
+          <span class="input-group-btn">
+            <button class="btn btn-danger" type="button"> <!-- action -->
+              <i class="glyphicon glyphicon-remove"></i>
+            </button>
+          </span>
+        </div>
+        <!-- /each -->
 
-      <div class="btn-clear-group">
-        <button class="btn btn-primary btn-clear">Clear Completed</button> <!-- action -->
+        <div class="btn-clear-group">
+          <button class="btn btn-primary btn-clear">Clear Completed</button> <!-- action -->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </script>
   <!-- /script -->
 
   <!-- JS Assets -->
